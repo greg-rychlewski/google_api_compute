@@ -128,7 +128,7 @@ defmodule GoogleApi.Compute.V1.Api.HttpsHealthChecks do
           keyword(),
           keyword()
         ) ::
-          {:ok, GoogleApi.Compute.V1.Model.HttpsHealthCheck.t()}
+          {:ok, GoogleApi.Compute.V1.Model.HttpsHealthCheckLegacy.t()}
           | {:ok, Tesla.Env.t()}
           | {:ok, list()}
           | {:error, any()}
@@ -162,7 +162,7 @@ defmodule GoogleApi.Compute.V1.Api.HttpsHealthChecks do
 
     connection
     |> Connection.execute(request)
-    |> Response.decode(opts ++ [struct: %GoogleApi.Compute.V1.Model.HttpsHealthCheck{}])
+    |> Response.decode(opts ++ [struct: %GoogleApi.Compute.V1.Model.HttpsHealthCheckLegacy{}])
   end
 
   @doc """
@@ -185,7 +185,7 @@ defmodule GoogleApi.Compute.V1.Api.HttpsHealthChecks do
           For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
 
           The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-      *   `:body` (*type:* `GoogleApi.Compute.V1.Model.HttpsHealthCheck.t`) - 
+      *   `:body` (*type:* `GoogleApi.Compute.V1.Model.HttpsHealthCheckLegacy.t`) -
   *   `opts` (*type:* `keyword()`) - Call options
 
   ## Returns
@@ -318,7 +318,7 @@ defmodule GoogleApi.Compute.V1.Api.HttpsHealthChecks do
           For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
 
           The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-      *   `:body` (*type:* `GoogleApi.Compute.V1.Model.HttpsHealthCheck.t`) - 
+      *   `:body` (*type:* `GoogleApi.Compute.V1.Model.HttpsHealthCheckLegacy.t`) -
   *   `opts` (*type:* `keyword()`) - Call options
 
   ## Returns
@@ -393,7 +393,7 @@ defmodule GoogleApi.Compute.V1.Api.HttpsHealthChecks do
           For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
 
           The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-      *   `:body` (*type:* `GoogleApi.Compute.V1.Model.HttpsHealthCheck.t`) - 
+      *   `:body` (*type:* `GoogleApi.Compute.V1.Model.HttpsHealthCheckLegacy.t`) -
   *   `opts` (*type:* `keyword()`) - Call options
 
   ## Returns
